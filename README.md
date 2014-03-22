@@ -10,8 +10,9 @@ Just one liner:
 
     > curl https://raw.githubusercontent.com/shoichikaji/golang-crosscompile-installer/master/installer.pl | perl -
 
-This installs go 1.2.1 to ~/.go with crosscompile support.
-Don't foget to set the followings in your .bashrc or .zshrc:
+This installs go 1.2.1 to `~/.go` with crosscompile support.
+
+Don't forget to set the followings in your `.bashrc` or `.zshrc`:
 
     export PATH=~/.go/bin:$PATH
     source ~/.go/misc/golang-crosscompile/crosscompile.bash

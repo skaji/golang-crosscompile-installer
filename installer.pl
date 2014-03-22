@@ -66,7 +66,7 @@ go-crosscompile-build-all
 ...
 
 my $message = <<"...";
-Don't foget to set the followings in your .bashrc or .zshrc
+Don't forget to set the followings in your .bashrc or .zshrc:
 export PATH=$go_root/bin:\$PATH
 source $go_root/misc/golang-crosscompile/crosscompile.bash
 ...
