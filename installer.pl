@@ -36,7 +36,7 @@ sub cd {
     chdir $dir or die "=> FAILED cd $dir: $!";
 }
 
-my $go_version       = $ENV{INSTALL_GOVERSION} || "1.2.1";
+my $go_version       = $ENV{INSTALL_GOVERSION} || "1.3";
 my $go_src           = "go${go_version}.src.tar.gz";
 my $go_url           = "http://golang.org/dl/$go_src";
 my $go_root          = $ENV{INSTALL_GOROOT} || "$ENV{HOME}/.go";
