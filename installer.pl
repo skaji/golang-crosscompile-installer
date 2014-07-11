@@ -38,7 +38,7 @@ sub cd {
 
 my $go_version       = $ENV{INSTALL_GOVERSION} || "1.2.1";
 my $go_src           = "go${go_version}.src.tar.gz";
-my $go_url           = "https://go.googlecode.com/files/$go_src";
+my $go_url           = "http://golang.org/dl/$go_src";
 my $go_root          = $ENV{INSTALL_GOROOT} || "$ENV{HOME}/.go";
 my $crosscompile_url = "git://github.com/davecheney/golang-crosscompile.git";
 
@@ -51,7 +51,7 @@ delete $ENV{$_} for @remove;
 
 my $tempdir = tempdir CLEANUP => 1;
 cd $tempdir;
-run "curl -s -O $go_url";
+run "curl -s -O -L $go_url";
 run "tar xf $go_src";
 run "mv go $go_root";
 
